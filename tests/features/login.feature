@@ -10,3 +10,5 @@ Feature: login
       | student | Password123 |
       | user2   | pass2       |
       | ""      | ""          |
+      | student | pass3       |
+      | user2   | Password123 |
