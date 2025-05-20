@@ -34,6 +34,7 @@ def valid_credentials(browser, user, passw):
 @then('I should be redirected to the dashboard')
 def logged(browser):
     if browser.current_url == "https://practicetestautomation.com/practice-test-login/":
+        time.sleep(0.5)
         assert browser.find_element(By.ID, "error").is_displayed()
     else:
-        assert browser.current_url == "https://practicetestautomation.com/logged-in-successfully/", "wrong credentials"
+        assert browser.current_url == "https://practicetestautomation.com/logged-in-successfully/"
